@@ -30,4 +30,29 @@ class DemoMybatisApplicationTests {
         System.out.println(student);
     }
 
+    @Test
+    public void test001(){
+        Student student = studentMapper.selectById(1L);
+        student.setName("zhu");
+        student.setAge(88);
+        studentMapper.updateById(student);
+    }
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

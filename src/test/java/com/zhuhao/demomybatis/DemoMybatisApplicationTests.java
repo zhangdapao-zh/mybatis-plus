@@ -1,5 +1,6 @@
 package com.zhuhao.demomybatis;
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.zhuhao.demomybatis.mapper.StudentMapper;
 import com.zhuhao.demomybatis.pojo.Student;
 import org.junit.jupiter.api.Test;
@@ -20,7 +21,7 @@ class DemoMybatisApplicationTests {
     }
 
     @Test
-    public void insertStudent(){
+    public void insertStudent() {
 
         Student student = new Student();
         student.setName("zhu");
@@ -31,13 +32,20 @@ class DemoMybatisApplicationTests {
     }
 
     @Test
-    public void test001(){
+    public void test001() {
         Student student = studentMapper.selectById(1L);
         student.setName("zhu");
         student.setAge(88);
         studentMapper.updateById(student);
     }
 
+    @Test
+    public void test002() {
+        Page<Student> page = new Page<>(1, 5);
+        studentMapper.selectPage(page, null);
+        page.getRecords().forEach(System.out::println);
+
+    }
 
 
 }

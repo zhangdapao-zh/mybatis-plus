@@ -1,6 +1,6 @@
 package com.zhuhao.demomybatis.blog.service;
 
-import com.zhuhao.demomybatis.blog.entity.Student;
+import com.zhuhao.demomybatis.blog.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -11,6 +11,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author zhu
  * @since 2021-03-27
  */
-public interface StudentService extends IService<Student> {
+public interface UserService extends IService<User> {
 
+    User selectById(Integer id);
 }

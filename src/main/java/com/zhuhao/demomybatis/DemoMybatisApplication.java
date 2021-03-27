@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 
 @SpringBootApplication
+@MapperScan("com.zhuhao.demomybatis.blog.mapper")
 
 public class DemoMybatisApplication {
 

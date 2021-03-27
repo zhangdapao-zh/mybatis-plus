@@ -1,6 +1,6 @@
 package com.zhuhao.demomybatis.blog.mapper;
 
-import com.zhuhao.demomybatis.blog.entity.Student;
+import com.zhuhao.demomybatis.blog.entity.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author zhu
  * @since 2021-03-27
  */
-public interface StudentMapper extends BaseMapper<Student> {
+public interface UserMapper extends BaseMapper<User> {
 
 }

@@ -1,5 +1,6 @@
 package com.zhuhao.demomybatis;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.zhuhao.demomybatis.mapper.StudentMapper;
 import com.zhuhao.demomybatis.pojo.Student;
@@ -46,6 +47,8 @@ class DemoMybatisApplicationTests {
         page.getRecords().forEach(System.out::println);
 
     }
+
+
 
 
 }

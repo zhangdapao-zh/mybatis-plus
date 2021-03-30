@@ -23,7 +23,7 @@ public class UserController {
 
     @Autowired
     private UserService userService;
-
+    
     @RequestMapping("/a/{id}")
     public User selectById(@PathVariable("id") Integer id){
         return userService.selectById(id);
